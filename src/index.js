@@ -1,4 +1,5 @@
-import { header, homeContent } from './home.js'
+import { header } from './header.js'
+import { homeContent } from './home.js'
 import { menuContent } from './menu.js'
 import { contactContent } from './contact.js'
 
@@ -35,6 +36,12 @@ const contact = () => {
 
 }
 
-document.getElementById('home').addEventListener('click', home)
-document.getElementById('menu').addEventListener('click', menu)
-document.getElementById('contact').addEventListener('click', contact)
+// If I uncomment these, they work as intended.
+
+// document.getElementById('home').addEventListener('click', home)
+// document.getElementById('menu').addEventListener('click', menu)
+// document.getElementById('contact').addEventListener('click', contact)
+
+//This makes me think the listener and functions they call should be in the 
+//same module, which is easy enough to do. But I'm wondering if there is 
+//another way to do this.
